@@ -64,7 +64,7 @@ class QuranMediaPlayerCard extends HTMLElement {
     const reciterAr = reciter.split("|")[0]?.trim() ?? reciter;
     const reciterEn = reciter.split("|")[1]?.trim() ?? reciter;
 
-    const BG = "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&q=80";
+    
 
     this.shadowRoot.innerHTML = `
 <style>
@@ -81,17 +81,14 @@ class QuranMediaPlayerCard extends HTMLElement {
 
   .bg {
     position: absolute; inset: 0;
-    background-image: url('${BG}');
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px) brightness(0.35);
-    transform: scale(1.05);
+    background: linear-gradient(145deg, #0a3d1f 0%, #052010 40%, #031a0d 100%);
     z-index: 0;
   }
 
   .overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(160deg, rgba(0,60,30,0.7) 0%, rgba(0,20,10,0.85) 100%);
+    background: radial-gradient(ellipse at 70% 20%, rgba(0,120,50,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(0,80,30,0.1) 0%, transparent 50%);
     z-index: 1;
   }
 
