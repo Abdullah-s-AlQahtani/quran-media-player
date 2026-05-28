@@ -1,0 +1,9 @@
+{
+  "domain": "quran_media",
+  "name": "Holy Quran Media",
+  "codeowners": ["@Abdullah-s-AlQahtani"],
+  "dependencies": [],
+  "documentation": "https://github.com/Abdullah-s-AlQahtani/quran-media-player",
+  "iot_class": "cloud_polling",
+  "version": "1.0.0"
+}
