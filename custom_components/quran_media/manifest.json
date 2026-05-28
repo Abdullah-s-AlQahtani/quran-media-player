@@ -1,13 +1,11 @@
 {
-  "domain": "quran_media",
-  "name": "Holy Quran Media",
-  "version": "1.0.0",
-  "documentation": "https://github.com/Abdullah-s-AlQahtani/quran-media-player",
-  "issue_tracker": "https://github.com/Abdullah-s-AlQahtani/quran-media-player/issues",
-  "codeowners": [
-    "@Abdullah-s-AlQahtani"
-  ],
+  "config_flow": true,
   "dependencies": [],
+  "domain": "quran_media",
+  "documentation": "https://github.com/Abdullah-s-AlQahtani/quran-media-player",
   "iot_class": "cloud_polling",
-  "config_flow": true
+  "issue_tracker": "https://github.com/Abdullah-s-AlQahtani/quran-media-player/issues",
+  "codeowners": ["@Abdullah-s-AlQahtani"],
+  "name": "Holy Quran Media",
+  "version": "1.0.0"
 }
