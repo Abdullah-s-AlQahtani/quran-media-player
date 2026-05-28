@@ -1,0 +1,33 @@
+select_player:
+  name: اختيار البلير | Select Player
+  description: تحديد الجهاز الذي يشغل القرآن
+  fields:
+    player:
+      required: true
+      selector:
+        entity:
+          domain: media_player
+
+play_live:
+  name: تشغيل بث مباشر | Play Live Stream
+  description: تشغيل إذاعة مباشرة
+  fields:
+    stream:
+      required: true
+      selector:
+        select:
+          options:
+            - "📻 إذاعة القرآن الكريم - السعودية | Saudi Quran Radio"
+
+play_surah:
+  name: تشغيل سورة | Play Surah
+  description: تشغيل سورة محددة مع قارئ محدد للأتوميشن
+  fields:
+    surah:
+      required: true
+      selector:
+        text:
+    reciter:
+      required: false
+      selector:
+        text:
